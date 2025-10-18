@@ -1,0 +1,38 @@
+SBOM with Syft and Grype
+
+This repository demonstrates how to generate and scan a Software Bill of Materials (SBOM) using Syft and Grype, open source tools from Anchore for software supply chain security.
+
+
+ *What is an SBOM?
+
+A Software Bill of Materials (SBOM) is a detailed list of all components, dependencies, and metadata that make up a piece of software. SBOMs help you:
+
+Understand what is in your software
+
+Manage vulnerabilities
+
+Comply with regulations (e.g., Executive Order 14028)
+
+Improve supply chain transparency
+
+ 
+* Tools Used
+
+
+-Syft
+
+Syft is a CLI tool and Go library for generating SBOMs from container images and filesystems.
+
+Supports multiple SBOM formats: SPDX, CycloneDX, Syft JSON
+
+Detects packages from OS, language ecosystems, and more
+
+
+
+-Grype
+
+Grype is a vulnerability scanner for container images and filesystems using SBOM data or direct analysis.
+
+Uses public vulnerability databases (like NVD, GitHub Security Advisories, OS-specific feeds)
+
+Integrates directly with SBOMs from Syft
